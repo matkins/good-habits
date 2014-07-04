@@ -29,7 +29,15 @@
   <div class="container">
     <nav class="navbar navbar-default" role="navigation">
       <ul class="nav navbar-nav">
-        <li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="index.html">Home</a></li>
+      {% for category in site.data.categories %}
+        {% if page.url == category.url %}
+        <li class='active'>
+        {% else %}
+        <li>
+        {% endif %}
+          <a href="{{ category.url }}">{{ category.name }}</a>
+        </li>
+      {% endfor %}
       </ul>
     </nav>
   </div>

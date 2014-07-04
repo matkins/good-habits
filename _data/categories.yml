@@ -1,0 +1,14 @@
+- name: Prayer
+  url:  /prayer/
+- name: Study
+  url:  /study/
+- name: Hospitality
+  url:  /hospitality/
+- name: Pilgrimage
+  url:  /pilgrimage/
+- name: Retreat
+  url:  /retreat/
+- name: Fasting
+  url:  /fasting/
+- name: Contemplation
+  url:  /contemplation/
