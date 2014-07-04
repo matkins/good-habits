@@ -3,31 +3,12 @@
     <div class='col-md-8 col-md-offset-2'>
       <div class="header text-center">
         <h1>
-          Good Habits
+          <a href='{{ site.baseurl }}/'>Good Habits</a>
           <br>
-          <small>Lightweight monastic rhythms for the every day</small>
+          <small><a href='{{ site.baseurl }}/'>Lightweight monastic rhythms for the every day</a></small>
         </h1>
         <div class="clearfix"></div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class='col-md-8 col-md-offset-2 text-center'>
-      <nav class="navbar navbar-default" role="navigation">
-        <ul class="nav navbar-nav">
-          {% for category in site.data.categories %}
-          {% if page.url == category.url %}
-          <li class='active'>
-          {% else %}
-          <li>
-          {% endif %}
-          <a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
     </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 <div class="row">
@@ -8,5 +8,12 @@ title: Home
     <p class='lead'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at venenatis arcu. Nullam viverra eleifend velit ut commodo. Praesent id pulvinar urna, sit amet euismod sem. Duis dolor metus, luctus vel elit id, sodales accumsan diam. Nulla sit amet velit mi. Nam non purus tempus, malesuada erat nec, molestie odio.
     </p>
+    <div class='categories'>
+      {% for category in site.data.categories %}
+      <div class='category'>
+        <a class='btn btn-lg btn-default btn-block' href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
