@@ -1,7 +1,10 @@
-<ul>
 {% for idea in include.ideas %}
-  <li>
-    {{ idea.title }}
-  </li>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ idea.title }}</h3>
+  </div>
+  <div class="panel-body">
+    {{ idea.text }}
+  </div>
+</div>
 {% endfor %}
-</ul>
