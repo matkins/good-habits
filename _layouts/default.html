@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+  
+<head>
+  <title>{{page.title}} - Good Habits</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+  
+<body>
+  <div class="container">
+    <div class="row">
+      <div class='col-md-12'>
+        <div class="header">
+          <h1>
+            Good Habits
+            <small>Lightweight monastic practices for the poor in time</small>
+          </h1>
+          <div class="clearfix">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+      <ul class="nav navbar-nav">
+        <li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Start main content -->
+  <div class="container">
+    {{ content }}
+  </div>
+  <!-- End main content -->
+  <div class="container">
+    <div class="footer">
+      <p>&copy; Good Habits 2014</p>
+    </div>
+  </div>
+</body>
+</html>

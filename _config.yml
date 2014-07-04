@@ -1,0 +1,9 @@
+# Site settings
+title: Good habits
+description: ""
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
