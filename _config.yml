@@ -1,7 +1,7 @@
 # Site settings
 title: Good habits
 description: ""
-baseurl: ""
+baseurl: "/good-habits"
 url: ""
 
 # Build settings

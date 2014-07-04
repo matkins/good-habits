@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
@@ -36,7 +36,7 @@
         {% else %}
         <li>
         {% endif %}
-          <a href="{{ category.url }}">{{ category.name }}</a>
+          <a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
         </li>
       {% endfor %}
       </ul>
