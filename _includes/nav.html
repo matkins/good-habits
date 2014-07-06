@@ -3,15 +3,11 @@
     <div class='col-md-8 col-md-offset-2 text-center'>
       <nav class="navbar navbar-default" role="navigation">
         <ul class="nav navbar-nav">
-          {% for category in site.data.categories %}
-          {% if page.url == category.url %}
-          <li class='active'>
-          {% else %}
-          <li>
-          {% endif %}
-          <a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
+        {% for category in site.data.categories %}
+          {% if page.url == category.url %}<li class='active'>{% else %}<li>{% endif %}
+            <a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
           </li>
-          {% endfor %}
+        {% endfor %}
         </ul>
       </nav>
     </div>
